@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    img{
+        @apply inline
+    }
+    textarea{
+        resize: auto
+    }
+}
+
+@layer components {
+    /*------------------------------------ Flex Classes ------------------------------------ */
+        .flex-center{
+            @apply flex justify-center items-center
+        }
+        .flex-col-center{
+            @apply flex justify-center items-center flex-col
+        }
+        .flex-between{
+            @apply flex justify-between items-center
+        }
+        .flex-col-between{
+            @apply flex justify-between items-center flex-col
+        }
+
+        .div-center{
+            @apply w-screen h-screen flex justify-center items-center
+        }
+
+        .border{
+            @apply border-[1px] border-[#DEDEDE]
+        }
+    /*------------------------------------ Flex Classes ------------------------------------ */
+
+    
+    /*------------------------------------ Styling Classes ------------------------------------ */
+        .list-p > li{
+            @apply mx-5
+        }
+
+
+    /*------------------------------------ Styling Classes ------------------------------------ */
+}
+
+@layer utilities {
+    
+}
